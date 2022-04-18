@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * print_op - function to check which specifier to print
