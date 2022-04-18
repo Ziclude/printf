@@ -8,7 +8,7 @@
 
 .SH SYNOPSIS
 
-.B #include \(dqholberton.h\(dq
+.B #include \(dmain.h\(dq
 
 .sp
 
@@ -26,7 +26,7 @@ The function _printf is a variadic function that produces a string according to 
 
 and prints it to the standard output, much like the C standard library function printf. It can receive a variable number of arguments.
 
-This function has been created in the context of a first-year project for Holberton School.
+This function has been created in the context of athe twelve months software engineering course project for ALX School.
 
 .sp
 
