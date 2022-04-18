@@ -30,4 +30,5 @@ int _hex_u(va_list hexa);
 int _strlen(char *s);
 int _bin(va_list bin);
 int _putchar(char c);
+
 #endif
