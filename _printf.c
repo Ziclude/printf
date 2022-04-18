@@ -15,7 +15,7 @@ int count = 0, b = 0, c = 0;
 a = format[b];
 while (a != '\0')
 {
-if (a == "%")
+if (a == '%')
 {
 c = 0;
 b++;
@@ -29,8 +29,8 @@ else
 {
 if (a == '\0')
 return (-1);
-if (a != "%")
-count += _putchar("%");
+if (a != '%')
+count += _putchar('%');
 count += _putchar(a);
 }
 }
