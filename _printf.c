@@ -55,14 +55,14 @@ int a = 0;
 fmt_t ops[] = {
 {"c", ch},
 {"s", str},
-/*{"d", _int},
+{"d", _int},
 {"b", _bin},
 {"i", _int},
 {"u", _ui},
 {"o", _oct},
 {"x", _hex_l},
 {"X", _hex_u},
-{"R", _rot13},*/
+{"R", _rot13},
 {NULL, NULL}
 };
 if (format == NULL)
