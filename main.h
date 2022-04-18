@@ -30,5 +30,6 @@ int _hex_u(va_list hexa);
 int _strlen(char *s);
 int _bin(va_list bin);
 int _putchar(char c);
-
+int _rev(char *s);
+int _per(__attribute__((unused))va_list valist);
 #endif
