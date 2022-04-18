@@ -65,6 +65,7 @@ fmt_t ops[] = {
 {"x", _hex_l},
 {"X", _hex_u},
 {"R", _rot13},
+{"r", _rot13},
 {NULL, NULL}
 };
 if (format == NULL)
