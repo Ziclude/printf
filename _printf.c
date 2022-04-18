@@ -10,7 +10,7 @@
  * Return: numb of char to be printed
  */
 
-int print_op(const char *format, fmt_t *print_arr, va_list list)
+int print_op(const char *format, format_t *print_arr, va_list list)
 {
 char a;
 int count = 0, b = 0, c = 0;
@@ -57,7 +57,6 @@ int a = 0;
 fmt_t ops[] = {
 {"c", ch},
 {"s", str},
-{"%", _per},
 {"d", _int},
 {"b", _bin},
 {"i", _int},
@@ -66,7 +65,7 @@ fmt_t ops[] = {
 {"x", _hex_l},
 {"X", _hex_u},
 {"R", _rot13},
-{"r", _rev},
+{"r", _rot13},
 {NULL, NULL}
 };
 if (format == NULL)

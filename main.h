@@ -10,14 +10,14 @@
  * @type: The format to print
  * @f: The print function to use
  */
-typedef struct fmt
+typedef struct format
 {
-	char *type;
-	int (*f)();
-} fmt_t;
+char *type;
+int (*f)();
+} format_t;
 
 int _printf(const char *format, ...);
-int print_op(const char *format, fmt_t *print_arr, va_list list);
+int print_op(const char *format, format_t *print_arr, va_list list);
 int ch(va_list character);
 int str(va_list string);
 int _int(va_list integ);
@@ -30,6 +30,5 @@ int _hex_u(va_list hexa);
 int _strlen(char *s);
 int _bin(va_list bin);
 int _putchar(char c);
-int _rev(char *s);
-int _per(__attribute__((unused))va_list valist);
+
 #endif
