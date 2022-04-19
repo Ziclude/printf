@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * print_op - function to check which specifier to print
@@ -8,7 +10,7 @@
  * Return: numb of char to be printed
  */
 
-int print_op(const char *format, fmt_t *print_arr, va_list list)
+int print_op(const char *format, format_t *print_arr, va_list list)
 {
 char a;
 int count = 0, b = 0, c = 0;
@@ -63,6 +65,7 @@ fmt_t ops[] = {
 {"x", _hex_l},
 {"X", _hex_u},
 {"R", _rot13},
+{"r", _rot13},
 {NULL, NULL}
 };
 if (format == NULL)
