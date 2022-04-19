@@ -13,7 +13,7 @@ int length;
 length = 0;
 while (string[length] != '\0')
 {
-length++;
+        length++;
 }
 return (length);
 }
