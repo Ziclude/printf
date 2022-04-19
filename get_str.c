@@ -15,6 +15,6 @@ if (str == NULL)
 str = "(null)";
 len = 0;
 while (str[len] != '\0')
-len = len + _putchar(str[len]);
+	len = len + _putchar(str[len]);
 return (len);
 }
