@@ -14,6 +14,7 @@ int print_op(const char *format, fmt_t *print_arr, va_list list)
 {
 char a;
 int count = 0, b = 0, c = 0;
+
 a = format[b];
 while (a != '\0')
 {
@@ -54,6 +55,7 @@ int _printf(const char *format, ...)
 {
 va_list list;
 int a = 0;
+
 fmt_t ops[] = {
 {"c", ch},
 {"s", str},
