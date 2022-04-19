@@ -1,12 +1,10 @@
-_printf
+# _printf
+----------------------------------------------------------
+**The _printf function is a custom implementation of the C programming function printf. It returns the number of characters printed and writes the output to stdout. It includes the conversion specifiers : c, s, %, d, x, X, u, o, rot13 and i.**
+-----------------------------------------------------------
+-------------------------------------------------------------
 
-The _printf function is a custom implementation of the C programming function printf. It returns the number of characters printed and writes the output to stdout. It includes the conversion specifiers : c, s, %, d, x, X, u, o, rot13 and i.
-
-
-
-
-
-Project Requirements
+==***Project Requirements***==
 
 All files will be compiled on Ubuntu 14.04 LTS
 
@@ -32,86 +30,60 @@ va_copy (man 3 va_copy)
 
 va_arg (man 3 va_arg)
 
-Files and functions
+__Files and functions__
+-------------------------------------------
+- [x] _putchar.c:
 
-_putchar.c:
+- [x] int _putchar(char c) - function to print char
 
+- [x] _strlen.c:
 
+- [x] int _strlen(char *string) - gets string length
 
-int _putchar(char c) - function to print char
+- [x] get_bin.c:
 
-_strlen.c:
+- [x] int _bin(va_list bin) - function to print binary
 
+- [x] get_char.c:
 
+- [x] int ch(va_list character) - function to return char
 
-int _strlen(char *string) - gets string length
+- [x] get_hex.c:
 
-get_bin.c:
+- [x] int _hex_str(unsigned int n, unsigned int hex, char alpha) - converts the number from base 10 to hex
 
+- [x] get_int.c:
 
+- [x] int _int(va_list integ) - function to print integers
 
-int _bin(va_list bin) - function to print binary
+- [x] get_oct.c:
 
-get_char.c:
+- [x] int _oct(va_list octo) - function to print octal
 
+- [x] get_rot13.c:
 
+- [x] int _rot13(va_list rot) - prints rot13 version
 
-int ch(va_list character) - function to return char
+- [x] get_str.c:
 
-get_hex.c:
+- [x] int str(va_list *s) - prints string to stdout
 
+- [x] get_unsigned.c:
 
+- [x] int _ui(va_list unsign) - unsigned int print to stdout
 
-int _hex_str(unsigned int n, unsigned int hex, char alpha) - converts the number from base 10 to hex
+- [x] main.h: header file
 
-get_int.c:
+- [x] _printf.c: main custom _printf function
 
+- [x] int print_op(const char *format, fmt_t *print_arr, va_list list) - function to check which specifier to print
 
+- [x] int _printf(const char *format, ...) - prints output according to format
 
-int _int(va_list integ) - function to print integers
-
-get_oct.c:
-
-
-
-int _oct(va_list octo) - function to print octal
-
-get_rot13.c:
-
-
-
-int _rot13(va_list rot) - prints rot13 version
-
-get_str.c:
-
-
-
-int str(va_list *s) - prints string to stdout
-
-get_unsigned.c:
-
-
-
-int _ui(va_list unsign) - unsigned int print to stdout
-
-main.h: header file
-
-
-
-printf.c: main custom _printf function
-
-
-
-int print_op(const char *format, fmt_t *print_arr, va_list list) - function to check which specifier to print
-
-int _printf(const char *format, ...) - prints output according to format
-
-Notes
+## Notes
 
 Our program does not handle buffer handling, flag characters, field width, precision, or length modifiers.
 
-
-
-Authors
-
+__***Authors***__
+---------------------------------------------
 Cindy Ziemi and Lionel Tangang
